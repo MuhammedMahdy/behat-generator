@@ -35,7 +35,7 @@ to install the extension on your chrome browser please follow this steps:
 # Events #
 
 - `onclick` on any element of this list: `p,span,b,li,a,button,:selected,:checked,textarea,h1,h2,h3,h4,h5,h6,input`
- to generate steps `Then I should see `text` in the `css selector`` ( e.g `Then I should see "What is this repository for?" in the "#readme > DIV:nth-child(2) > ARTICLE:nth-child(1) > H3:nth-child(3)" element` )
+ to generate steps `Then I should see `text` in the `css selector`` ( e.g `Then I should see "What is this repository for?" in the "#css or dom selector" element` )
 
 - `onclick` on `a,button` the extension generate this steps ( so I prefer to `keydown` on `ctrl` while try to click this step ) 
    - `Then I should see "Add New anchor or button" in the "#elementID" element` 
