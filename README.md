@@ -42,7 +42,8 @@ to install the extension on your chrome browser please follow this steps:
    - `Then I click on "#elementID"` 
    - `Then the url should match "/xxxx"` 
 
-- `onmousedown` on any `td` to generate `Then I should see `text` in the `css selector`` ( e.g `Then I should see "What is this repository for?" in the "#tableEx > tr-child(2) > td:nth-child(3)" element` )  
+- `onmousedown` on any `td` to generate `Then I should see "text" in the "css selector" 
+    - ( e.g `Then I should see "What is this repository for?" in the "#tableEx" element` )  
 
 - `onmouseover` on `a,button` to generate for example : 
    
