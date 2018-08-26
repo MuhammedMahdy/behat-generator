@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "BehatGenerator",
+  "web_accessible_resources": [
+    "/index.html"
+  ],
+  "description": "Behat Generator Extension",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "assets/images/app_icon/48/48.png",
+    "default_popup": ""
+  },
+  "icons": {
+    "16":  "assets/images/app_icon/16/16.png",
+    "48":  "assets/images/app_icon/48/48.png",
+    "96":  "assets/images/app_icon/96/96.png",
+    "128": "assets/images/app_icon/128/128.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs",
+    "management",
+    "storage",
+    "notifications"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "assets/js/jquery-3.3.1.min.js",
+        "assets/js/functions.js"
+      ],
+      "css": [
+        "assets/css/style.css"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "assets/js/background.js"
+    ],
+    "persistent": false
+  }
+}
